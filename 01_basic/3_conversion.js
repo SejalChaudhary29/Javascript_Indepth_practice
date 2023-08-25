@@ -35,3 +35,10 @@ conversion in string
 undefined => undefined
 */
  
+//**********operation************
+
+let value = 3 
+let negValue = -value
+console.log(negValue) //-3
+
+
