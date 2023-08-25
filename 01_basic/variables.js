@@ -1,5 +1,5 @@
 
-// let, const, and var  
+// let, const, and var are memory space where we store and reterive the data.   
 /* let can be updated and not re-declared 
    var can be updated and can be re-declared
    const cannot be updated and re-declared
