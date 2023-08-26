@@ -9,7 +9,7 @@
   undefined //not declarred yet
   Symbol //unique
 
-  //#Non-primitive
+  //#Non-primitive ~ refernce
   Array
   Object
   Function
