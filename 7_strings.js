@@ -8,6 +8,7 @@ console.log(`my name is ${names} ${lastName}.`)
 
 // String() constructor creates string objects
  const a = new String('sejalch')
+ console.log(a)
  console.log(a[1])//e
  console.log(a.charAt(3))//a
  console.log(a.length)//7
