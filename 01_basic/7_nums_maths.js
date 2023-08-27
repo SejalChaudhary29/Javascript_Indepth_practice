@@ -33,7 +33,15 @@ console.log(number.toLocaleString('en-IN'))//1,00,000
 console.log(Math) // it is a object and haves property
 console.log(Math.abs(-4)) //it  only coverts negativr number into a positive
 console.log(Math.round(4.6)) //5
-console.log(Math.ceil(4.8)) //above than 4.0 it will give top round off value //5
-console.log(Math.floor(4.8)) //above than 5.0 it will give low round off value //4
+console.log(Math.ceil(4.1)) //above than 4.0 it will give top round off value (highest value)//5
+console.log(Math.floor(4.8)) //above than 5.0 it will give low round off value (lowest value)//4
+console.log(Math.min(2, 5 ,8,10 ))
+console.log(Math.max(4, 5 ,8,10 ))
+
+console.log(Math.random())
+console.log((Math.random()*10) +1)
+
+
+
 
 
