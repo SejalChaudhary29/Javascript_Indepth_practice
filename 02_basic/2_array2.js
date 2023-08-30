@@ -2,6 +2,8 @@
 
 const myArr1 = ['thor', 'ironman', 'spiderman' ]
 const myArr2 = ['superman', 'batman','flash']
+myArr1.push(myArr2) //[ 'thor', 'ironman', 'spiderman', [ 'superman', 'batman', 'flash' ] ]
+console.log(myArr1)
  console.log(myArr1.concat(myArr2))
 //  [ 'thor', 'ironman', 'spiderman', 'superman', 'batman', 'flash' ]
 
