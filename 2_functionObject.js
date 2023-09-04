@@ -25,4 +25,12 @@ const obj1 = {
      console.log(`username is ${obj.username} , enrolled in course of ${obj.course}`)
         }    
 
-userDetails(obj1)
+userDetails(obj1) 
+
+//  function with Array 
+
+const Array1 = [22 , 33 ,44 , 55, 66]
+function secondValue (val){
+    return val
+}
+console.log(secondValue(Array1))//[ 22, 33, 44, 55, 66 ]
