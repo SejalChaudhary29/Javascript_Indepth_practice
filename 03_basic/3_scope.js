@@ -7,4 +7,4 @@ if(true){
 console.log(a)//10
 
 //let and const are block scope
-//var is global scope
+//var is global scope 
