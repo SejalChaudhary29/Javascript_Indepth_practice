@@ -1,4 +1,6 @@
+// SCOPE 
 // var a = 200;
+
 let a = 10;
 
 if(true){
