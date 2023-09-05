@@ -3,6 +3,7 @@
 
 // conditional statment
 // if-else  
+// We use conditional statement  because we cannot execute the whole code at a time. as per the condition we excute the code. 
 let a = 10;
 const isloggedIn = false;
 if(!isloggedIn){
