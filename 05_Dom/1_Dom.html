@@ -6,16 +6,61 @@
     <title>Dom learning</title>
 
 </head>
-<body>
-    <div class="bg-black">
-        <h1 class="heading"> Dom practice</h1>
-        <p>Lorem ipsum dolor sit amet consectetur.</p>
+<style>
+  .bg-black{
+        background-color: #303030;
+        color: aliceblue;
+    }
+</style>
+<body class="bg-black">
+    <div>
+        <h1 id="heading" class="heading"> Dom practice <span class="span" style="display: none;" > span tag here</span></h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, eligendi perferendis? Veritatis, amet. Suscipit exercitationem voluptates eum rem consectetur eveniet?</p>
 
     </div>
+
+    <ul>
+        <li class="item">one</li>
+        <li class="item">Two</li>
+        <li class="item">Three</li>
+    </ul>
     <script>
         console.log(window)
         console.log(document)
         console.dir(document)
+
+       const  heading = document.getElementById('heading')
+        console.log(heading)
+        console.log('text content',heading.textContent)
+        console.log(heading.getAttribute('class'))
+        console.log(heading.setAttribute('class','test heading')) // the given value overirdes the already existing one. for that write both the value. 
+        
+        console.log(heading.style.backgroundColor = 'orange')
+        console.log(heading.style.padding = '12px')
+        console.log('innerhtml',heading.innerHTML)
+        console.log('innerText',heading.innerText)
+        
+
+        //dom manipulation 
+        // querySelectorAll gives NodeList collection
+        // getElementByClassName gives Html Collection 
+        // both looks like array but they are not a array 
+         const h1 = document.getElementById('heading')
+         h1.style.color = 'red'
+
+         const myUl = document.querySelector('ul')
+         console.log(myUl)
+         const li =  myUl.querySelectorAll('li')
+         li.forEach((i)=>{
+         i.style.color = 'yellow'
+         i.style.listStyle = 'none'
+
+      })
+      const item = document.getElementsByClassName('item')
+      console.log(item.length)
+
+
     </script>
 </body>
-</html>
+</html>  
