@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+
+</head>
+<body>
+<div>
+    <ul id="images">
+        <li>
+    
+            <img  id = 'image'src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=300&q=80"> google</img>
+        </li>
+        <li>
+    
+            <img  id = 'link'src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStP2J_aAsiPZUWKfhBotVB8ub_YL5xxM9pt_b6W3Ye&s"> google</img>
+        </li>
+        <a id="google" href="https://google.com">Google</a>
+      </ul>  
+    
+</div>
+ <script> 
+const images = document.querySelector('#images')
+images.addEventListener('click', function(e){
+    console.log('clicked the ul ')
+} , true) //event capturing
+const link = document.querySelector('#link')
+link.addEventListener('click', function(e){
+    console.log('click the feather image')
+} , true) // event capturing
+ 
+const google = document.querySelector('#google')
+google.addEventListener('click' , function(e){
+    e.preventDefault()
+    console.log('google clicked')
+})
+// false or (by default is false) argument use for event bubling which is bottom to top
+
+//true argument use for event capturing which is top to bottom
+
+// stopPropogation => it is used for stopping the porpogation of event
+document.querySelector('#images').addEventListener('click' , function(e){
+    console.log(e)
+    console.log(e.target.parentNode)
+    let removeiT = e.target.parentNode
+    //removing the the elemet
+    // removeiT.remove()
+    removeiT.parentNode.removeChild(removeiT)
+
+}) 
+</script>
+</body>
+</html>
