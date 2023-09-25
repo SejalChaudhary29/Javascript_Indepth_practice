@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #303030; color: #fff">
+    <h1>DoM- new element</h1>
+    <div>
+      <p>
+        Hello I am para Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Facere ipsum adipisci cum! Non autem maiores odio deserunt do
+      </p>
+    </div>
+    <script>
+      const div = document.createElement("div");
+      div.className = "box-1";
+      div.id = "box1";
+      div.style.width = "400px";
+      div.style.height = "400px";
+
+      div.style.backgroundColor = "#124850";
+      div.style.color = "#fff";
+
+      div.setAttribute("class", "hello box-1"); // preferable
+      div.innerText = " dom practicee";
+      const addText = document.createTextNode("chai aur code");
+      div.appendChild(addText);
+      document.body.appendChild(div);
+      console.log(div);
+    </script>
+  </body>
+</html>

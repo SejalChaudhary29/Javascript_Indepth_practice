@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #303030; color: aliceblue">
+    <ul class="language">
+      <li>python</li>
+    </ul>
+    <ul class="anotherLang">
+      <li>another python</li>
+    </ul>
+    <script>
+      //adding li through function
+
+      function addlang(langName) {
+        const li = document.createElement("li");
+        li.innerHTML = `${langName}`;
+        li.style.color = "red";
+        document.querySelector(".language").appendChild(li);
+      }
+      addlang("javascript");
+      //preferable way
+      function addlangA(lang) {
+        const li = document.createElement("li");
+        li.style.color = "yellow";
+
+        li.appendChild(document.createTextNode(lang));
+        console.log("console log ");
+        document.querySelector(".anotherLang").appendChild(li);
+      }
+      addlangA("another js");
+      addlangA("another ruby");
+      addlangA("another python ");
+
+      //edit
+      const firstLang = document.querySelector('li:nth-child(1)')
+      console.log(firstLang)
+      // firstLang.innerHTML = 'I  a first language'
+      const newli = document.createElement('li')
+      newli.textContent = 'Mojo'
+      firstLang.replaceWith(newli)
+
+      //edit
+
+      const secondLang = document.querySelector('li:nth-child(2)')
+      secondLang.outerHTML= '<li> TypeScript </li>'
+
+      //remove 
+      const lastLang = document.querySelector('ul')
+      lastLang.remove()
+    </script>
+  </body>
+</html>
