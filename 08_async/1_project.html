@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async project- 1</title>
+
+</head>
+
+<h1> Async Practice</h1>
+
+<button id = 'start'> Start</button>
+<button id = 'stop'> Stop</button>
+<p id="msg"></p>
+<body>
+   <script>
+ const start = document.querySelector('#start')
+ const stop = document.querySelector('#stop')
+
+ const message = document.querySelector('p')
+
+ start.addEventListener('click' , function(){
+     sayMe =  setInterval(()=>{
+        console.log('sejal')
+
+    }, 1000)
+ })
+
+ stop.addEventListener('click' , function(){
+     console.log('stooped')
+     
+    clearInterval(sayMe)
+ })
+   </script> 
+
+
+
+</body>
+</html>
