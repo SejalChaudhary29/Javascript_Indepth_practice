@@ -1,0 +1,26 @@
+1. Javascript  ------->by default ->  1. synchronous  2. single-threaded language
+ a)synchronous -> executing the code one by one
+ b)single threaded lang -> on one thread all the code will be executed
+
+
+
+Javascript engine will always found with the browser runtime environment and nodejs runtime environment
+
+2. Excecution context
+In a execution context one line of code execute at a time
+|
+|--> console.log('I am first)
+|
+|
+|--> console.log('I am Second)
+|
+|
+
+//I am first
+//I am Second
+
+
+3. Blocking code vs Non-blocking code
+
+blocking code -> it blocks the flow of code // read file sync
+non- blocking code -> doest not blocks the flow // read file async
