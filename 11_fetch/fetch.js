@@ -34,6 +34,7 @@ getallUsers();
 /* [
       A fetch() promise does not reject on Http errors (404) instead. then () handler ,ust check the REsponse.ok and Response.status .properties  
  ]*/
+ 
 
 
 
