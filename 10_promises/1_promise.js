@@ -1,3 +1,8 @@
+//  A promise object represts the eventual completion ( or failure )
+// of an asynchrnous operations and its resulting value
+
+// used for -> db connection , network request , cryptography s
+// three stages ===>  pending , filfilled , rejected 
 // promise instance
 
 const promiseOne = new Promise((resolve, reject) => {
