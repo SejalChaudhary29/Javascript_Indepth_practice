@@ -1,6 +1,6 @@
 // class constructor
 
-class user {
+class User {
   constructor(username, email, id) {
     this.username = username;
     this.email = email;
@@ -10,7 +10,7 @@ class user {
     console.log(`my id is ${this.id}`)
   }
 }
-const chai = new user( 'chai', 'chaiaurcode@gmail.com' , 123 )
+const chai = new User( 'chai', 'chaiaurcode@gmail.com' , 123 )
 console.log(chai)
 console.log(chai.encryptPassword())
 
@@ -18,14 +18,14 @@ console.log(chai.encryptPassword())
 //behind the scene of class constructor
 // as js is prototypal typed language. classes is a syntaxtical sugax
 
-function users(username , email , id){
+function Users(username , email , id){
     this.username = username
     this.email = email
     this.id = id
 }
-users.prototype.encryptPassword = function(){
+Users.prototype.encryptPassword = function(){
     console.log(`I am a ${this.id}`)
 }
-const tea = new users('tea', 'tea@gmail.com' , 456)
+const tea = new Users('tea', 'tea@gmail.com' , 456)
 console.log(tea)
 console.log(tea.encryptPassword())
